@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1690218288299,
+      "tag": "0000_goofy_chimera",
+      "breakpoints": true
+    }
+  ]
+}

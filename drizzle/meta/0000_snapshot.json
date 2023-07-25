@@ -1,0 +1,6014 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "5",
+  "dialect": "mysql",
+  "tables": {
+    "BachBaoCacRecord": {
+      "name": "BachBaoCacRecord",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "UserId": {
+          "autoincrement": false,
+          "name": "UserId",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UserName": {
+          "autoincrement": false,
+          "name": "UserName",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "VatPham_ID": {
+          "autoincrement": false,
+          "name": "VatPham_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "VatPhamTen": {
+          "autoincrement": false,
+          "name": "VatPhamTen",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "VatPhamSoLuong": {
+          "autoincrement": false,
+          "name": "VatPhamSoLuong",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "NguyenBaoSoLuong": {
+          "autoincrement": false,
+          "name": "NguyenBaoSoLuong",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ThoiGian": {
+          "autoincrement": false,
+          "name": "ThoiGian",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {
+        "ID": {
+          "name": "ID",
+          "columns": [
+            "ID"
+          ]
+        }
+      }
+    },
+    "Character": {
+      "name": "Character",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_ID": {
+          "autoincrement": false,
+          "name": "FLD_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_INDEX": {
+          "autoincrement": false,
+          "name": "FLD_INDEX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FACE": {
+          "autoincrement": false,
+          "name": "FLD_FACE",
+          "type": "varbinary(10)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JOB": {
+          "autoincrement": false,
+          "name": "FLD_JOB",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_EXP": {
+          "autoincrement": false,
+          "name": "FLD_EXP",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ZX": {
+          "autoincrement": false,
+          "name": "FLD_ZX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JOB_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_JOB_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_X": {
+          "autoincrement": false,
+          "name": "FLD_X",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Y": {
+          "autoincrement": false,
+          "name": "FLD_Y",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Z": {
+          "autoincrement": false,
+          "name": "FLD_Z",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MENOW": {
+          "autoincrement": false,
+          "name": "FLD_MENOW",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MONEY": {
+          "autoincrement": false,
+          "name": "FLD_MONEY",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MoneyX": {
+          "autoincrement": false,
+          "name": "FLD_MoneyX",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_HP": {
+          "autoincrement": false,
+          "name": "FLD_HP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MP": {
+          "autoincrement": false,
+          "name": "FLD_MP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SP": {
+          "autoincrement": false,
+          "name": "FLD_SP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_WX": {
+          "autoincrement": false,
+          "name": "FLD_WX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SE": {
+          "autoincrement": false,
+          "name": "FLD_SE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_POINT": {
+          "autoincrement": false,
+          "name": "FLD_POINT",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SKILLS": {
+          "autoincrement": false,
+          "name": "FLD_SKILLS",
+          "type": "varbinary(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_WEARITEM": {
+          "autoincrement": false,
+          "name": "FLD_WEARITEM",
+          "type": "varbinary(5000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_WEARITEMFZ": {
+          "autoincrement": false,
+          "name": "FLD_WEARITEMFZ",
+          "type": "varbinary(1500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LCWEARITEM": {
+          "autoincrement": false,
+          "name": "FLD_LCWEARITEM",
+          "type": "varbinary(73)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITEM": {
+          "autoincrement": false,
+          "name": "FLD_ITEM",
+          "type": "varbinary(8000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ItemNTC": {
+          "autoincrement": false,
+          "name": "FLD_ItemNTC",
+          "type": "varbinary(438)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QITEM": {
+          "autoincrement": false,
+          "name": "FLD_QITEM",
+          "type": "varbinary(300)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_KONGFU": {
+          "autoincrement": false,
+          "name": "FLD_KONGFU",
+          "type": "varbinary(1404)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_HITS": {
+          "autoincrement": false,
+          "name": "FLD_HITS",
+          "type": "varbinary(250)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DOORS": {
+          "autoincrement": false,
+          "name": "FLD_DOORS",
+          "type": "varbinary(1200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QUEST": {
+          "autoincrement": false,
+          "name": "FLD_QUEST",
+          "type": "varbinary(400)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LUMPID": {
+          "autoincrement": false,
+          "name": "FLD_LUMPID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CTIME": {
+          "autoincrement": false,
+          "name": "FLD_CTIME",
+          "type": "varbinary(320)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FIGHT_EXP": {
+          "autoincrement": false,
+          "name": "FLD_FIGHT_EXP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_J9": {
+          "autoincrement": false,
+          "name": "FLD_J9",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JQ": {
+          "autoincrement": false,
+          "name": "FLD_JQ",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JL": {
+          "autoincrement": false,
+          "name": "FLD_JL",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAMETYPE": {
+          "autoincrement": false,
+          "name": "FLD_NAMETYPE",
+          "type": "varbinary(48)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ZBVER": {
+          "autoincrement": false,
+          "name": "FLD_ZBVER",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ZzType": {
+          "autoincrement": false,
+          "name": "FLD_ZzType",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ZzSl": {
+          "autoincrement": false,
+          "name": "FLD_ZzSl",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CTIMENEW": {
+          "autoincrement": false,
+          "name": "FLD_CTIMENEW",
+          "type": "varbinary(240)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QlNAME": {
+          "autoincrement": false,
+          "name": "FLD_QlNAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QlJZNAME": {
+          "autoincrement": false,
+          "name": "FLD_QlJZNAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QlDu": {
+          "autoincrement": false,
+          "name": "FLD_QlDu",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ThangThienKhiCong": {
+          "autoincrement": false,
+          "name": "FLD_ThangThienKhiCong",
+          "type": "varbinary(60)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ThangThienVoCong": {
+          "autoincrement": false,
+          "name": "FLD_ThangThienVoCong",
+          "type": "varbinary(144)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ThangThienLichLuyen": {
+          "autoincrement": false,
+          "name": "FLD_ThangThienLichLuyen",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ThangThienVoCongDiemSo": {
+          "autoincrement": false,
+          "name": "FLD_ThangThienVoCongDiemSo",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ADD_HP": {
+          "autoincrement": false,
+          "name": "FLD_ADD_HP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ADD_AT": {
+          "autoincrement": false,
+          "name": "FLD_ADD_AT",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ADD_DF": {
+          "autoincrement": false,
+          "name": "FLD_ADD_DF",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ADD_HB": {
+          "autoincrement": false,
+          "name": "FLD_ADD_HB",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ADD_MP": {
+          "autoincrement": false,
+          "name": "FLD_ADD_MP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ADD_MZ": {
+          "autoincrement": false,
+          "name": "FLD_ADD_MZ",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ZS": {
+          "autoincrement": false,
+          "name": "FLD_ZS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_VIPDJ": {
+          "autoincrement": false,
+          "name": "FLD_VIPDJ",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_FQID": {
+          "autoincrement": false,
+          "name": "FLD_FQID",
+          "type": "varchar(20)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SoLanGietNguoi": {
+          "autoincrement": false,
+          "name": "SoLanGietNguoi",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "BiGietSoLan": {
+          "autoincrement": false,
+          "name": "BiGietSoLan",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SuPhu": {
+          "autoincrement": false,
+          "name": "FLD_SuPhu",
+          "type": "varbinary(28)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DeTu": {
+          "autoincrement": false,
+          "name": "FLD_DeTu",
+          "type": "varbinary(60)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SuDoVoCong": {
+          "autoincrement": false,
+          "name": "FLD_SuDoVoCong",
+          "type": "varbinary(10)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_GiaiTruThoiGian": {
+          "autoincrement": false,
+          "name": "FLD_GiaiTruThoiGian",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TitlePoints": {
+          "autoincrement": false,
+          "name": "FLD_TitlePoints",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "CongThanhChienThoiGian": {
+          "autoincrement": false,
+          "name": "CongThanhChienThoiGian",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_XB": {
+          "autoincrement": false,
+          "name": "FLD_XB",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_RoseTitlePoints": {
+          "autoincrement": false,
+          "name": "FLD_RoseTitlePoints",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SpeakingType": {
+          "autoincrement": false,
+          "name": "FLD_SpeakingType",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NSZITEM": {
+          "autoincrement": false,
+          "name": "FLD_NSZITEM",
+          "type": "varbinary(600)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LJKONGFU": {
+          "autoincrement": false,
+          "name": "FLD_LJKONGFU",
+          "type": "varbinary(128)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_STIME": {
+          "autoincrement": false,
+          "name": "FLD_STIME",
+          "type": "varbinary(320)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "BangPhai_DoCongHien": {
+          "autoincrement": false,
+          "name": "BangPhai_DoCongHien",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MLZ": {
+          "autoincrement": false,
+          "name": "FLD_MLZ",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PVP_Piont": {
+          "autoincrement": false,
+          "name": "FLD_PVP_Piont",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ThanNuVoCongDiemSo": {
+          "autoincrement": false,
+          "name": "FLD_ThanNuVoCongDiemSo",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LOVE_WORD": {
+          "autoincrement": false,
+          "name": "FLD_LOVE_WORD",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MARITAL_STATUS": {
+          "autoincrement": false,
+          "name": "FLD_MARITAL_STATUS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MARRIED": {
+          "autoincrement": false,
+          "name": "FLD_MARRIED",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JH_DATE": {
+          "autoincrement": false,
+          "name": "FLD_JH_DATE",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FB_TIME": {
+          "autoincrement": false,
+          "name": "FLD_FB_TIME",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LOST_WX": {
+          "autoincrement": false,
+          "name": "FLD_LOST_WX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_GET_WX": {
+          "autoincrement": false,
+          "name": "FLD_GET_WX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_HD_TIME": {
+          "autoincrement": false,
+          "name": "FLD_HD_TIME",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_KieuToc": {
+          "autoincrement": false,
+          "name": "FLD_KieuToc",
+          "type": "varbinary(4)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_KhuonMat": {
+          "autoincrement": false,
+          "name": "FLD_KhuonMat",
+          "type": "varbinary(4)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_WHTB": {
+          "autoincrement": false,
+          "name": "FLD_WHTB",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CHTIME": {
+          "autoincrement": false,
+          "name": "FLD_CHTIME",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CONFIG": {
+          "autoincrement": false,
+          "name": "FLD_CONFIG",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FASHION_ITEM": {
+          "autoincrement": false,
+          "name": "FLD_FASHION_ITEM",
+          "type": "varbinary(5082)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QUEST_FINISH": {
+          "autoincrement": false,
+          "name": "FLD_QUEST_FINISH",
+          "type": "varbinary(1000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ADD_CLVC": {
+          "autoincrement": false,
+          "name": "FLD_ADD_CLVC",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ADD_PTVC": {
+          "autoincrement": false,
+          "name": "FLD_ADD_PTVC",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ADD_KC": {
+          "autoincrement": false,
+          "name": "FLD_ADD_KC",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CHECK_GIFTCODE": {
+          "autoincrement": false,
+          "name": "FLD_CHECK_GIFTCODE",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Free_Spin": {
+          "autoincrement": false,
+          "name": "FLD_Free_Spin",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Member_VIP": {
+          "autoincrement": false,
+          "name": "FLD_Member_VIP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_VIP_Point": {
+          "autoincrement": false,
+          "name": "FLD_VIP_Point",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ActionInDay": {
+          "autoincrement": false,
+          "name": "FLD_ActionInDay",
+          "type": "longtext",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_CheckInCode": {
+          "autoincrement": false,
+          "name": "FLD_CheckInCode",
+          "type": "longtext",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_BuyEventShop": {
+          "autoincrement": false,
+          "name": "FLD_BuyEventShop",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_BuyEventShopTime": {
+          "autoincrement": false,
+          "name": "FLD_BuyEventShopTime",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_CTIME_STR": {
+          "autoincrement": false,
+          "name": "FLD_CTIME_STR",
+          "type": "longtext",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_WorldBoss_Point": {
+          "autoincrement": false,
+          "name": "FLD_WorldBoss_Point",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PkPoint": {
+          "autoincrement": false,
+          "name": "FLD_PkPoint",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SafePoint": {
+          "autoincrement": false,
+          "name": "FLD_SafePoint",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ThemWuxun_MoiNgay": {
+          "autoincrement": false,
+          "name": "FLD_ThemWuxun_MoiNgay",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_GiamWuxun_MoiNgay": {
+          "autoincrement": false,
+          "name": "FLD_GiamWuxun_MoiNgay",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NhiemVuDaTauID": {
+          "autoincrement": false,
+          "name": "FLD_NhiemVuDaTauID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NhiemVuDaTauLevel": {
+          "autoincrement": false,
+          "name": "FLD_NhiemVuDaTauLevel",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ActionInWeek": {
+          "autoincrement": false,
+          "name": "FLD_ActionInWeek",
+          "type": "longtext",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PHTD_DiemSo": {
+          "autoincrement": false,
+          "name": "FLD_PHTD_DiemSo",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_KyGui_Gold": {
+          "autoincrement": false,
+          "name": "FLD_KyGui_Gold",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_KyGui_Cash": {
+          "autoincrement": false,
+          "name": "FLD_KyGui_Cash",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_DiemHoangKim": {
+          "autoincrement": false,
+          "name": "FLD_DiemHoangKim",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ITEM_STR": {
+          "autoincrement": false,
+          "name": "FLD_ITEM_STR",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_WEARITEM_STR": {
+          "autoincrement": false,
+          "name": "FLD_WEARITEM_STR",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {
+        "FLD_NAME": {
+          "name": "FLD_NAME",
+          "columns": [
+            "FLD_NAME"
+          ]
+        }
+      }
+    },
+    "EventTop": {
+      "name": "EventTop",
+      "columns": {
+        "id": {
+          "autoincrement": true,
+          "name": "id",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "TenNhanVat": {
+          "autoincrement": false,
+          "name": "TenNhanVat",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "BangPhai": {
+          "autoincrement": false,
+          "name": "BangPhai",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "TheLuc": {
+          "autoincrement": false,
+          "name": "TheLuc",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "DangCap": {
+          "autoincrement": false,
+          "name": "DangCap",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "GietNguoiSoLuong": {
+          "autoincrement": false,
+          "name": "GietNguoiSoLuong",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "TuVongSoLuong": {
+          "autoincrement": false,
+          "name": "TuVongSoLuong",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "PhanKhuTinTuc": {
+          "autoincrement": false,
+          "name": "PhanKhuTinTuc",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "NpcDiemSo": {
+          "autoincrement": false,
+          "name": "NpcDiemSo",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "TotalDiemSo": {
+          "autoincrement": false,
+          "name": "TotalDiemSo",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "ForceWar_Rewards_Request": {
+      "name": "ForceWar_Rewards_Request",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_ID": {
+          "autoincrement": false,
+          "name": "FLD_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Name": {
+          "autoincrement": false,
+          "name": "FLD_Name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Reward_Name": {
+          "autoincrement": false,
+          "name": "FLD_Reward_Name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Gold": {
+          "autoincrement": false,
+          "name": "FLD_Gold",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_VoHoang": {
+          "autoincrement": false,
+          "name": "FLD_VoHoang",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_VoHuan": {
+          "autoincrement": false,
+          "name": "FLD_VoHuan",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Status": {
+          "autoincrement": false,
+          "name": "FLD_Status",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Cash": {
+          "autoincrement": false,
+          "name": "FLD_Cash",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Item": {
+          "autoincrement": false,
+          "name": "FLD_Item",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Time_Request": {
+          "autoincrement": false,
+          "name": "FLD_Time_Request",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Time_Added": {
+          "autoincrement": false,
+          "name": "FLD_Time_Added",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "ITEMSELL": {
+      "name": "ITEMSELL",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PRICE": {
+          "autoincrement": false,
+          "name": "FLD_PRICE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DESC": {
+          "autoincrement": false,
+          "name": "FLD_DESC",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_RETURN": {
+          "autoincrement": false,
+          "name": "FLD_RETURN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NUMBER": {
+          "autoincrement": false,
+          "name": "FLD_NUMBER",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC5": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC5",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SoCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_SoCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TrungCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_TrungCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TienHoa": {
+          "autoincrement": false,
+          "name": "FLD_TienHoa",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PhaiChangKhoaLai": {
+          "autoincrement": false,
+          "name": "FLD_PhaiChangKhoaLai",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DAYS": {
+          "autoincrement": false,
+          "name": "FLD_DAYS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "ItemRecord": {
+      "name": "ItemRecord",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "UserId": {
+          "autoincrement": false,
+          "name": "UserId",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UserName": {
+          "autoincrement": false,
+          "name": "UserName",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ToUserId": {
+          "autoincrement": false,
+          "name": "ToUserId",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ToUserName": {
+          "autoincrement": false,
+          "name": "ToUserName",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Global_ID": {
+          "autoincrement": false,
+          "name": "Global_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "VatPham_ID": {
+          "autoincrement": false,
+          "name": "VatPham_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "VatPhamTen": {
+          "autoincrement": false,
+          "name": "VatPhamTen",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "VatPhamSoLuong": {
+          "autoincrement": false,
+          "name": "VatPhamSoLuong",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "VatPhamThuocTinh": {
+          "autoincrement": false,
+          "name": "VatPhamThuocTinh",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "SoTien": {
+          "autoincrement": false,
+          "name": "SoTien",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "LoaiHinh": {
+          "autoincrement": false,
+          "name": "LoaiHinh",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ThoiGian": {
+          "autoincrement": false,
+          "name": "ThoiGian",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "LogPK": {
+      "name": "LogPK",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Nguoigiet": {
+          "autoincrement": false,
+          "name": "Nguoigiet",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Nguoibigiet": {
+          "autoincrement": false,
+          "name": "Nguoibigiet",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Thoigian": {
+          "autoincrement": false,
+          "name": "Thoigian",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "Log_DeleteItem": {
+      "name": "Log_DeleteItem",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "MaItem": {
+          "autoincrement": false,
+          "name": "MaItem",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "IDItem": {
+          "autoincrement": false,
+          "name": "IDItem",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Thoigian": {
+          "autoincrement": false,
+          "name": "Thoigian",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "LevelItem": {
+          "autoincrement": false,
+          "name": "LevelItem",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Username": {
+          "autoincrement": false,
+          "name": "Username",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "TrangThai": {
+          "autoincrement": false,
+          "name": "TrangThai",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "LoginRecord": {
+      "name": "LoginRecord",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "UserId": {
+          "autoincrement": false,
+          "name": "UserId",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UserName": {
+          "autoincrement": false,
+          "name": "UserName",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UserIp": {
+          "autoincrement": false,
+          "name": "UserIp",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "LoaiHinh": {
+          "autoincrement": false,
+          "name": "LoaiHinh",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ThoiGian": {
+          "autoincrement": false,
+          "name": "ThoiGian",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "ShopEvent": {
+      "name": "ShopEvent",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PRICE": {
+          "autoincrement": false,
+          "name": "FLD_PRICE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DESC": {
+          "autoincrement": false,
+          "name": "FLD_DESC",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_RETURN": {
+          "autoincrement": false,
+          "name": "FLD_RETURN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NUMBER": {
+          "autoincrement": false,
+          "name": "FLD_NUMBER",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC5": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC5",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SoCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_SoCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TrungCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_TrungCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TienHoa": {
+          "autoincrement": false,
+          "name": "FLD_TienHoa",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PhaiChangKhoaLai": {
+          "autoincrement": false,
+          "name": "FLD_PhaiChangKhoaLai",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DAYS": {
+          "autoincrement": false,
+          "name": "FLD_DAYS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "ShopHoangKim": {
+      "name": "ShopHoangKim",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PRICE": {
+          "autoincrement": false,
+          "name": "FLD_PRICE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_DESC": {
+          "autoincrement": false,
+          "name": "FLD_DESC",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_RETURN": {
+          "autoincrement": false,
+          "name": "FLD_RETURN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NUMBER": {
+          "autoincrement": false,
+          "name": "FLD_NUMBER",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC5": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC5",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SoCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_SoCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TrungCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_TrungCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TienHoa": {
+          "autoincrement": false,
+          "name": "FLD_TienHoa",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PhaiChangKhoaLai": {
+          "autoincrement": false,
+          "name": "FLD_PhaiChangKhoaLai",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_DAYS": {
+          "autoincrement": false,
+          "name": "FLD_DAYS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_GuildLevel": {
+          "autoincrement": false,
+          "name": "FLD_GuildLevel",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "ShopVoHoang": {
+      "name": "ShopVoHoang",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PRICE": {
+          "autoincrement": false,
+          "name": "FLD_PRICE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DESC": {
+          "autoincrement": false,
+          "name": "FLD_DESC",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_RETURN": {
+          "autoincrement": false,
+          "name": "FLD_RETURN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NUMBER": {
+          "autoincrement": false,
+          "name": "FLD_NUMBER",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC5": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC5",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SoCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_SoCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TrungCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_TrungCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TienHoa": {
+          "autoincrement": false,
+          "name": "FLD_TienHoa",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PhaiChangKhoaLai": {
+          "autoincrement": false,
+          "name": "FLD_PhaiChangKhoaLai",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DAYS": {
+          "autoincrement": false,
+          "name": "FLD_DAYS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "ShopVoHuan": {
+      "name": "ShopVoHuan",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PRICE": {
+          "autoincrement": false,
+          "name": "FLD_PRICE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DESC": {
+          "autoincrement": false,
+          "name": "FLD_DESC",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_RETURN": {
+          "autoincrement": false,
+          "name": "FLD_RETURN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NUMBER": {
+          "autoincrement": false,
+          "name": "FLD_NUMBER",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC5": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC5",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SoCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_SoCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TrungCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_TrungCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TienHoa": {
+          "autoincrement": false,
+          "name": "FLD_TienHoa",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PhaiChangKhoaLai": {
+          "autoincrement": false,
+          "name": "FLD_PhaiChangKhoaLai",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DAYS": {
+          "autoincrement": false,
+          "name": "FLD_DAYS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "ShopWorldBoss": {
+      "name": "ShopWorldBoss",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PRICE": {
+          "autoincrement": false,
+          "name": "FLD_PRICE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DESC": {
+          "autoincrement": false,
+          "name": "FLD_DESC",
+          "type": "varchar(1000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_RETURN": {
+          "autoincrement": false,
+          "name": "FLD_RETURN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NUMBER": {
+          "autoincrement": false,
+          "name": "FLD_NUMBER",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC5": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC5",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SoCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_SoCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TrungCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_TrungCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TienHoa": {
+          "autoincrement": false,
+          "name": "FLD_TienHoa",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PhaiChangKhoaLai": {
+          "autoincrement": false,
+          "name": "FLD_PhaiChangKhoaLai",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DAYS": {
+          "autoincrement": false,
+          "name": "FLD_DAYS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_ACCOUNT": {
+      "name": "TBL_ACCOUNT",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_ID": {
+          "autoincrement": false,
+          "name": "FLD_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PASSWORD": {
+          "autoincrement": false,
+          "name": "FLD_PASSWORD",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_CARD": {
+          "autoincrement": false,
+          "name": "FLD_CARD",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QU": {
+          "autoincrement": false,
+          "name": "FLD_QU",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ANSWER": {
+          "autoincrement": false,
+          "name": "FLD_ANSWER",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_REGIP": {
+          "autoincrement": false,
+          "name": "FLD_REGIP",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_REGTIME": {
+          "autoincrement": false,
+          "name": "FLD_REGTIME",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LASTLOGINTIME": {
+          "autoincrement": false,
+          "name": "FLD_LASTLOGINTIME",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LASTLOGINIP": {
+          "autoincrement": false,
+          "name": "FLD_LASTLOGINIP",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_VIP": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "FLD_VIP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ZT": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "FLD_ZT",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ONLINE": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "FLD_ONLINE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SEX": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "FLD_SEX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_RXPIONT": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "FLD_RXPIONT",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_RXPIONTX": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "FLD_RXPIONTX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_VIPTIM": {
+          "autoincrement": false,
+          "name": "FLD_VIPTIM",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Mail": {
+          "autoincrement": false,
+          "name": "FLD_Mail",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FQ": {
+          "autoincrement": false,
+          "name": "FLD_FQ",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JF": {
+          "autoincrement": false,
+          "name": "FLD_JF",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ZJF": {
+          "autoincrement": false,
+          "name": "FLD_ZJF",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_YY": {
+          "autoincrement": false,
+          "name": "FLD_YY",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_BD": {
+          "autoincrement": false,
+          "name": "FLD_BD",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PAY": {
+          "autoincrement": false,
+          "name": "FLD_PAY",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_INCOME": {
+          "autoincrement": false,
+          "name": "FLD_INCOME",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CARDOLD": {
+          "autoincrement": false,
+          "name": "FLD_CARDOLD",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MONEY": {
+          "autoincrement": false,
+          "name": "FLD_MONEY",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TotalAmount": {
+          "autoincrement": false,
+          "name": "FLD_TotalAmount",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LOCK": {
+          "autoincrement": false,
+          "name": "FLD_LOCK",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SAFEWORD": {
+          "autoincrement": false,
+          "name": "FLD_SAFEWORD",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SPREADERID": {
+          "autoincrement": false,
+          "name": "FLD_SPREADERID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SPREADER_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_SPREADER_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_RUNMORE": {
+          "autoincrement": false,
+          "name": "FLD_RUNMORE",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MACHINEID": {
+          "autoincrement": false,
+          "name": "FLD_MACHINEID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_COIN": {
+          "autoincrement": false,
+          "name": "FLD_COIN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TRANSFER_TIMES": {
+          "autoincrement": false,
+          "name": "FLD_TRANSFER_TIMES",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_USERID": {
+          "autoincrement": false,
+          "name": "FLD_USERID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QCVIP": {
+          "autoincrement": false,
+          "name": "FLD_QCVIP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QCVIPTIM": {
+          "autoincrement": false,
+          "name": "FLD_QCVIPTIM",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_WCVIP": {
+          "autoincrement": false,
+          "name": "FLD_WCVIP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_WCVIPTIM": {
+          "autoincrement": false,
+          "name": "FLD_WCVIPTIM",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QDCS": {
+          "autoincrement": false,
+          "name": "FLD_QDCS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_QDSJ": {
+          "autoincrement": false,
+          "name": "FLD_QDSJ",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CHECKLOGIN": {
+          "autoincrement": false,
+          "name": "FLD_CHECKLOGIN",
+          "type": "bit(1)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CHECKIP": {
+          "autoincrement": false,
+          "name": "FLD_CHECKIP",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LANIP": {
+          "autoincrement": false,
+          "name": "FLD_LANIP",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TYPE": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_GIFTPOINT": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "FLD_GIFTPOINT",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PHONE": {
+          "default": 0,
+          "autoincrement": false,
+          "name": "FLD_PHONE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {
+        "FLD_ID": {
+          "name": "FLD_ID",
+          "columns": [
+            "FLD_ID"
+          ]
+        }
+      }
+    },
+    "TBL_AscQigongOption": {
+      "name": "TBL_AscQigongOption",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_INDEX": {
+          "autoincrement": false,
+          "name": "FLD_INDEX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JOB": {
+          "autoincrement": false,
+          "name": "FLD_JOB",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DES": {
+          "autoincrement": false,
+          "name": "FLD_DES",
+          "type": "varchar(2000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ChiSo1": {
+          "autoincrement": false,
+          "name": "FLD_ChiSo1",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Bonus1": {
+          "autoincrement": false,
+          "name": "FLD_Bonus1",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ChuThich1": {
+          "autoincrement": false,
+          "name": "FLD_ChuThich1",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ChiSo2": {
+          "autoincrement": false,
+          "name": "FLD_ChiSo2",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Bonus2": {
+          "autoincrement": false,
+          "name": "FLD_Bonus2",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ChuThich2": {
+          "autoincrement": false,
+          "name": "FLD_ChuThich2",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Hieuqua1": {
+          "autoincrement": false,
+          "name": "FLD_Hieuqua1",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ChuThich3": {
+          "autoincrement": false,
+          "name": "FLD_ChuThich3",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Hieuqua2": {
+          "autoincrement": false,
+          "name": "FLD_Hieuqua2",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ChuThich4": {
+          "autoincrement": false,
+          "name": "FLD_ChuThich4",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_BuffOfGuild": {
+      "name": "TBL_BuffOfGuild",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Guild_Level": {
+          "autoincrement": false,
+          "name": "Guild_Level",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_HP": {
+          "autoincrement": false,
+          "name": "Bonus_HP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_MP": {
+          "autoincrement": false,
+          "name": "Bonus_MP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_ATK": {
+          "autoincrement": false,
+          "name": "Bonus_ATK",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_DF": {
+          "autoincrement": false,
+          "name": "Bonus_DF",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Percent_ATKSkill": {
+          "autoincrement": false,
+          "name": "Bonus_Percent_ATKSkill",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_DefSkill": {
+          "autoincrement": false,
+          "name": "Bonus_DefSkill",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Abilities": {
+          "autoincrement": false,
+          "name": "Bonus_Abilities",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Percent_Exp": {
+          "autoincrement": false,
+          "name": "Bonus_Percent_Exp",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Percent_Lucky": {
+          "autoincrement": false,
+          "name": "Bonus_Percent_Lucky",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Percent_Drop": {
+          "autoincrement": false,
+          "name": "Bonus_Percent_Drop",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Percent_DropGold": {
+          "autoincrement": false,
+          "name": "Bonus_Percent_DropGold",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_Buff_TanThu": {
+      "name": "TBL_Buff_TanThu",
+      "columns": {
+        "Id": {
+          "autoincrement": true,
+          "name": "Id",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Buff_Name": {
+          "autoincrement": false,
+          "name": "Buff_Name",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Buff_Level": {
+          "autoincrement": false,
+          "name": "Buff_Level",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Buff_LevelX": {
+          "autoincrement": false,
+          "name": "Buff_LevelX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Buff_TrungSinh": {
+          "autoincrement": false,
+          "name": "Buff_TrungSinh",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Buff_Exp": {
+          "autoincrement": false,
+          "name": "Buff_Exp",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Buff_ItemID": {
+          "autoincrement": false,
+          "name": "Buff_ItemID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_CheckIn": {
+      "name": "TBL_CheckIn",
+      "columns": {
+        "Id": {
+          "autoincrement": true,
+          "name": "Id",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_Item": {
+          "autoincrement": false,
+          "name": "FLD_Item",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Item_Name": {
+          "autoincrement": false,
+          "name": "FLD_Item_Name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ItemVIP": {
+          "autoincrement": false,
+          "name": "FLD_ItemVIP",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ItemVIP_Name": {
+          "autoincrement": false,
+          "name": "FLD_ItemVIP_Name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Time": {
+          "autoincrement": false,
+          "name": "FLD_Time",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_CheckCode": {
+          "autoincrement": false,
+          "name": "FLD_CheckCode",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CheckCodeVIP": {
+          "autoincrement": false,
+          "name": "FLD_CheckCodeVIP",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_DropOptions": {
+      "name": "TBL_DropOptions",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LEVEL1": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_LEVEL2": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_RATE": {
+          "autoincrement": false,
+          "name": "FLD_RATE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_OPTION": {
+          "autoincrement": false,
+          "name": "FLD_OPTION",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Drop": {
+          "autoincrement": false,
+          "name": "FLD_Drop",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_OpenBox": {
+          "autoincrement": false,
+          "name": "FLD_OpenBox",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ShopNPC": {
+          "autoincrement": false,
+          "name": "FLD_ShopNPC",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_WebShop": {
+          "autoincrement": false,
+          "name": "FLD_WebShop",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_GIFTCODE": {
+      "name": "TBL_GIFTCODE",
+      "columns": {
+        "Id": {
+          "autoincrement": true,
+          "name": "Id",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "GiftCode": {
+          "autoincrement": false,
+          "name": "GiftCode",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Reward_Type": {
+          "autoincrement": false,
+          "name": "Reward_Type",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Use_Times": {
+          "autoincrement": false,
+          "name": "Use_Times",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "UserID": {
+          "autoincrement": false,
+          "name": "UserID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "OneTimePerUserName": {
+          "autoincrement": false,
+          "name": "OneTimePerUserName",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_GIFTCODE_REWARDS": {
+      "name": "TBL_GIFTCODE_REWARDS",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_GOLD": {
+          "autoincrement": false,
+          "name": "FLD_GOLD",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_WUXUN": {
+          "autoincrement": false,
+          "name": "FLD_WUXUN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_VOHOANG": {
+          "autoincrement": false,
+          "name": "FLD_VOHOANG",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_CASH": {
+          "autoincrement": false,
+          "name": "FLD_CASH",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ITEM": {
+          "autoincrement": false,
+          "name": "FLD_ITEM",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_Guild_SupportSettings": {
+      "name": "TBL_Guild_SupportSettings",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_MaKichHoat": {
+          "autoincrement": false,
+          "name": "FLD_MaKichHoat",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Name": {
+          "autoincrement": false,
+          "name": "FLD_Name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Description": {
+          "autoincrement": false,
+          "name": "FLD_Description",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PointRequest": {
+          "autoincrement": false,
+          "name": "FLD_PointRequest",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Guild_Level": {
+          "autoincrement": false,
+          "name": "FLD_Guild_Level",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Buff_DropGold": {
+          "autoincrement": false,
+          "name": "FLD_Buff_DropGold",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Buff_DropExp": {
+          "autoincrement": false,
+          "name": "FLD_Buff_DropExp",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Buff_DropItem": {
+          "autoincrement": false,
+          "name": "FLD_Buff_DropItem",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Buff_Lucky": {
+          "autoincrement": false,
+          "name": "FLD_Buff_Lucky",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Buff_ATK": {
+          "autoincrement": false,
+          "name": "FLD_Buff_ATK",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Buff_DEF": {
+          "autoincrement": false,
+          "name": "FLD_Buff_DEF",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Buff_HP": {
+          "autoincrement": false,
+          "name": "FLD_Buff_HP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Buff_Qigong": {
+          "autoincrement": false,
+          "name": "FLD_Buff_Qigong",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SummonBoss": {
+          "autoincrement": false,
+          "name": "FLD_SummonBoss",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Minutes": {
+          "autoincrement": false,
+          "name": "FLD_Minutes",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Type": {
+          "autoincrement": false,
+          "name": "FLD_Type",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Level": {
+          "autoincrement": false,
+          "name": "FLD_Level",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_HISTORY_SPIN": {
+      "name": "TBL_HISTORY_SPIN",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_CHAR_NAME": {
+          "autoincrement": false,
+          "name": "FLD_CHAR_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITEM_ID": {
+          "autoincrement": false,
+          "name": "FLD_ITEM_ID",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SPIN_ID": {
+          "autoincrement": false,
+          "name": "FLD_SPIN_ID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SPIN_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_SPIN_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SPIN": {
+          "autoincrement": false,
+          "name": "FLD_SPIN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SPINX": {
+          "autoincrement": false,
+          "name": "FLD_SPINX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ENERGY": {
+          "autoincrement": false,
+          "name": "FLD_ENERGY",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ENERGYX": {
+          "autoincrement": false,
+          "name": "FLD_ENERGYX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TIME": {
+          "autoincrement": false,
+          "name": "FLD_TIME",
+          "type": "datetime",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_STATUS": {
+          "autoincrement": false,
+          "name": "FLD_STATUS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SPIN_RATE": {
+          "autoincrement": false,
+          "name": "FLD_SPIN_RATE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_HatchItem": {
+      "name": "TBL_HatchItem",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PIDX": {
+          "autoincrement": false,
+          "name": "FLD_PIDX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAMEX": {
+          "autoincrement": false,
+          "name": "FLD_NAMEX",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Number": {
+          "autoincrement": false,
+          "name": "FLD_Number",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PP": {
+          "autoincrement": false,
+          "name": "FLD_PP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC0": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC0",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_LowSoul": {
+          "autoincrement": false,
+          "name": "FLD_LowSoul",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MedSoul": {
+          "autoincrement": false,
+          "name": "FLD_MedSoul",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Quality": {
+          "autoincrement": false,
+          "name": "FLD_Quality",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Lock": {
+          "autoincrement": false,
+          "name": "FLD_Lock",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ExpiryDate": {
+          "autoincrement": false,
+          "name": "FLD_ExpiryDate",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Announce": {
+          "autoincrement": false,
+          "name": "FLD_Announce",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_ItemOption": {
+      "name": "TBL_ItemOption",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Bonus_HP": {
+          "autoincrement": false,
+          "name": "Bonus_HP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_PercentHP": {
+          "autoincrement": false,
+          "name": "Bonus_PercentHP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Bonus_MP": {
+          "autoincrement": false,
+          "name": "Bonus_MP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_PercentMP": {
+          "autoincrement": false,
+          "name": "Bonus_PercentMP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Bonus_ATK": {
+          "autoincrement": false,
+          "name": "Bonus_ATK",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_PercentATK": {
+          "autoincrement": false,
+          "name": "Bonus_PercentATK",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_PercentDF": {
+          "autoincrement": false,
+          "name": "Bonus_PercentDF",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Bonus_DF": {
+          "autoincrement": false,
+          "name": "Bonus_DF",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_PercentATKSkill": {
+          "autoincrement": false,
+          "name": "Bonus_PercentATKSkill",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Bonus_DefSkill": {
+          "autoincrement": false,
+          "name": "Bonus_DefSkill",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Bonus_Qigong": {
+          "autoincrement": false,
+          "name": "Bonus_Qigong",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_DropGold": {
+          "autoincrement": false,
+          "name": "Bonus_DropGold",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Exp": {
+          "autoincrement": false,
+          "name": "Bonus_Exp",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Lucky": {
+          "autoincrement": false,
+          "name": "Bonus_Lucky",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Accuracy": {
+          "autoincrement": false,
+          "name": "Bonus_Accuracy",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Evasion": {
+          "autoincrement": false,
+          "name": "Bonus_Evasion",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_DiemHoangKim": {
+          "autoincrement": false,
+          "name": "Bonus_DiemHoangKim",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_KyGuiVatPham": {
+      "name": "TBL_KyGuiVatPham",
+      "columns": {
+        "id": {
+          "autoincrement": true,
+          "name": "id",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_ID": {
+          "autoincrement": false,
+          "name": "FLD_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ItemName": {
+          "autoincrement": false,
+          "name": "FLD_ItemName",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ItemPID": {
+          "autoincrement": false,
+          "name": "FLD_ItemPID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ItemOption": {
+          "autoincrement": false,
+          "name": "FLD_ItemOption",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Amount": {
+          "autoincrement": false,
+          "name": "FLD_Amount",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Price": {
+          "autoincrement": false,
+          "name": "FLD_Price",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Type": {
+          "autoincrement": false,
+          "name": "FLD_Type",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Time": {
+          "autoincrement": false,
+          "name": "FLD_Time",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_STATUS": {
+          "autoincrement": false,
+          "name": "FLD_STATUS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_RESIDE2": {
+          "autoincrement": false,
+          "name": "FLD_RESIDE2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NOTICE": {
+          "autoincrement": false,
+          "name": "FLD_NOTICE",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITEMBYTE": {
+          "autoincrement": false,
+          "name": "FLD_ITEMBYTE",
+          "type": "varbinary(73)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_ListMagicQigong": {
+      "name": "TBL_ListMagicQigong",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_MAGIC": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Shop_PP": {
+          "autoincrement": false,
+          "name": "Shop_PP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Drop_PP": {
+          "autoincrement": false,
+          "name": "Drop_PP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "QigongID": {
+          "autoincrement": false,
+          "name": "QigongID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "DungChung_QigongID": {
+          "autoincrement": false,
+          "name": "DungChung_QigongID",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "DonVi": {
+          "autoincrement": false,
+          "name": "DonVi",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {
+        "QigongID": {
+          "name": "QigongID",
+          "columns": [
+            "QigongID"
+          ]
+        }
+      }
+    },
+    "TBL_OPEN_CHEST": {
+      "name": "TBL_OPEN_CHEST",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "CHEST_NAME": {
+          "autoincrement": false,
+          "name": "CHEST_NAME",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "CHEST_ID": {
+          "autoincrement": false,
+          "name": "CHEST_ID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ITEM_NAME": {
+          "autoincrement": false,
+          "name": "ITEM_NAME",
+          "type": "varchar(300)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITEM": {
+          "autoincrement": false,
+          "name": "FLD_ITEM",
+          "type": "varchar(250)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JOB_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_JOB_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_JOB": {
+          "autoincrement": false,
+          "name": "FLD_JOB",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_GENDER": {
+          "autoincrement": false,
+          "name": "FLD_GENDER",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_FORCE": {
+          "autoincrement": false,
+          "name": "FLD_FORCE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PP": {
+          "autoincrement": false,
+          "name": "FLD_PP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_QigongOption": {
+      "name": "TBL_QigongOption",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_INDEX": {
+          "autoincrement": false,
+          "name": "FLD_INDEX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JOB": {
+          "autoincrement": false,
+          "name": "FLD_JOB",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DES": {
+          "autoincrement": false,
+          "name": "FLD_DES",
+          "type": "varchar(2000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ChiSo1": {
+          "autoincrement": false,
+          "name": "FLD_ChiSo1",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Bonus1": {
+          "autoincrement": false,
+          "name": "FLD_Bonus1",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ChuThich1": {
+          "autoincrement": false,
+          "name": "FLD_ChuThich1",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ChiSo2": {
+          "autoincrement": false,
+          "name": "FLD_ChiSo2",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Bonus2": {
+          "autoincrement": false,
+          "name": "FLD_Bonus2",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ChuThich2": {
+          "autoincrement": false,
+          "name": "FLD_ChuThich2",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Hieuqua1": {
+          "autoincrement": false,
+          "name": "FLD_Hieuqua1",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ChuThich3": {
+          "autoincrement": false,
+          "name": "FLD_ChuThich3",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Hieuqua2": {
+          "autoincrement": false,
+          "name": "FLD_Hieuqua2",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ChuThich4": {
+          "autoincrement": false,
+          "name": "FLD_ChuThich4",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_RebornSettings": {
+      "name": "TBL_RebornSettings",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Reborn_Times": {
+          "autoincrement": false,
+          "name": "Reborn_Times",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Reborn_Level": {
+          "autoincrement": false,
+          "name": "Reborn_Level",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Reborn_Level_Down": {
+          "autoincrement": false,
+          "name": "Reborn_Level_Down",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Item_Request": {
+          "autoincrement": false,
+          "name": "Item_Request",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Bonus_HP": {
+          "autoincrement": false,
+          "name": "Bonus_HP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_ATK": {
+          "autoincrement": false,
+          "name": "Bonus_ATK",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_DF": {
+          "autoincrement": false,
+          "name": "Bonus_DF",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_WX": {
+          "autoincrement": false,
+          "name": "Bonus_WX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Gold": {
+          "autoincrement": false,
+          "name": "Bonus_Gold",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_Cash": {
+          "autoincrement": false,
+          "name": "Bonus_Cash",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bonus_VoHoang": {
+          "autoincrement": false,
+          "name": "Bonus_VoHoang",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Item_Rewards": {
+          "autoincrement": false,
+          "name": "Item_Rewards",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_SPIN": {
+      "name": "TBL_SPIN",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_ID": {
+          "autoincrement": false,
+          "name": "FLD_ID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ITEM_NAME": {
+          "autoincrement": false,
+          "name": "FLD_ITEM_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PP1": {
+          "autoincrement": false,
+          "name": "FLD_PP1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PP2": {
+          "autoincrement": false,
+          "name": "FLD_PP2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_INFO": {
+          "autoincrement": false,
+          "name": "FLD_INFO",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SHOW": {
+          "autoincrement": false,
+          "name": "FLD_SHOW",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SPIN_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_SPIN_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ITEM_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_ITEM_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC0_MIN": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC0_MIN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC0_MAX": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC0_MAX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_StoreOnline": {
+      "name": "TBL_StoreOnline",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_ID": {
+          "autoincrement": false,
+          "name": "FLD_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITEM": {
+          "autoincrement": false,
+          "name": "FLD_ITEM",
+          "type": "varbinary(8000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITEM_STR": {
+          "autoincrement": false,
+          "name": "FLD_ITEM_STR",
+          "type": "longtext",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_SuDoSoLieu": {
+      "name": "TBL_SuDoSoLieu",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_TNAME": {
+          "autoincrement": false,
+          "name": "FLD_TNAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_INDEX": {
+          "autoincrement": false,
+          "name": "FLD_INDEX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SNAME": {
+          "autoincrement": false,
+          "name": "FLD_SNAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TLEVEL": {
+          "autoincrement": false,
+          "name": "FLD_TLEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_STLEVEL": {
+          "autoincrement": false,
+          "name": "FLD_STLEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_STYHD": {
+          "autoincrement": false,
+          "name": "FLD_STYHD",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_STWG1": {
+          "autoincrement": false,
+          "name": "FLD_STWG1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_STWG2": {
+          "autoincrement": false,
+          "name": "FLD_STWG2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_STWG3": {
+          "autoincrement": false,
+          "name": "FLD_STWG3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_TayLuyenVatPham_ThuocTinh": {
+      "name": "TBL_TayLuyenVatPham_ThuocTinh",
+      "columns": {
+        "Id": {
+          "autoincrement": true,
+          "name": "Id",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_Name": {
+          "autoincrement": false,
+          "name": "FLD_Name",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Option": {
+          "autoincrement": false,
+          "name": "FLD_Option",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Line": {
+          "autoincrement": false,
+          "name": "FLD_Line",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PP": {
+          "autoincrement": false,
+          "name": "FLD_PP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NguyenLieuID": {
+          "autoincrement": false,
+          "name": "FLD_NguyenLieuID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TayLuyen_Type": {
+          "autoincrement": false,
+          "name": "FLD_TayLuyen_Type",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_ThienPhu": {
+      "name": "TBL_ThienPhu",
+      "columns": {
+        "ID": {
+          "autoincrement": true,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_ID": {
+          "autoincrement": false,
+          "name": "FLD_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TP_CongLuc_LV": {
+          "autoincrement": false,
+          "name": "FLD_TP_CongLuc_LV",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TP_PhongNgu_LV": {
+          "autoincrement": false,
+          "name": "FLD_TP_PhongNgu_LV",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TP_CLVC_LV": {
+          "autoincrement": false,
+          "name": "FLD_TP_CLVC_LV",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TP_ULPT_LV": {
+          "autoincrement": false,
+          "name": "FLD_TP_ULPT_LV",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TP_SinhMenh_LV": {
+          "autoincrement": false,
+          "name": "FLD_TP_SinhMenh_LV",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TP_NoiCong_LV": {
+          "autoincrement": false,
+          "name": "FLD_TP_NoiCong_LV",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TP_NeTranh_LV": {
+          "autoincrement": false,
+          "name": "FLD_TP_NeTranh_LV",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TP_ChinhXac_LV": {
+          "autoincrement": false,
+          "name": "FLD_TP_ChinhXac_LV",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_DROP": {
+      "name": "TBL_XWWL_DROP",
+      "columns": {
+        "id": {
+          "autoincrement": true,
+          "name": "id",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_LEVEL1": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LEVEL2": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PP": {
+          "autoincrement": false,
+          "name": "FLD_PP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC0": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC0",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SoCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_SoCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TrungCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_TrungCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TienHoa": {
+          "autoincrement": false,
+          "name": "FLD_TienHoa",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_KhoaLai": {
+          "autoincrement": false,
+          "name": "FLD_KhoaLai",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SUNX": {
+          "autoincrement": false,
+          "name": "FLD_SUNX",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "CoMoThongBao": {
+          "autoincrement": false,
+          "name": "CoMoThongBao",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_Guild": {
+      "name": "TBL_XWWL_Guild",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "G_Name": {
+          "autoincrement": false,
+          "name": "G_Name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "G_Master": {
+          "autoincrement": false,
+          "name": "G_Master",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "G_Notice": {
+          "autoincrement": false,
+          "name": "G_Notice",
+          "type": "varchar(60)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Leve": {
+          "autoincrement": false,
+          "name": "Leve",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ThanhDanh": {
+          "autoincrement": false,
+          "name": "ThanhDanh",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "MonHuy": {
+          "autoincrement": false,
+          "name": "MonHuy",
+          "type": "varbinary(800)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "MonPhucWord": {
+          "autoincrement": false,
+          "name": "MonPhucWord",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "MonPhucMauSac": {
+          "autoincrement": false,
+          "name": "MonPhucMauSac",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "BangPhaiVoHuan": {
+          "autoincrement": false,
+          "name": "BangPhaiVoHuan",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Thang": {
+          "autoincrement": false,
+          "name": "Thang",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Thua": {
+          "autoincrement": false,
+          "name": "Thua",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Hoa": {
+          "autoincrement": false,
+          "name": "Hoa",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "MonPhaiTaiSan": {
+          "autoincrement": false,
+          "name": "MonPhaiTaiSan",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "BangPhaiCongHien": {
+          "autoincrement": false,
+          "name": "BangPhaiCongHien",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "BangPhaiTaiNguyen": {
+          "autoincrement": false,
+          "name": "BangPhaiTaiNguyen",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "BangPhaiTroCap": {
+          "autoincrement": false,
+          "name": "BangPhaiTroCap",
+          "type": "varchar(500)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "KichHoatPhoBan": {
+          "autoincrement": false,
+          "name": "KichHoatPhoBan",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_GuildMember": {
+      "name": "TBL_XWWL_GuildMember",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "G_Name": {
+          "autoincrement": false,
+          "name": "G_Name",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Leve": {
+          "autoincrement": false,
+          "name": "Leve",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JoinTime": {
+          "autoincrement": false,
+          "name": "FLD_JoinTime",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_LastDonateTime": {
+          "default": "CURRENT_TIMESTAMP",
+          "autoincrement": false,
+          "name": "FLD_LastDonateTime",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Donate": {
+          "autoincrement": false,
+          "name": "FLD_Donate",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_ITEM": {
+      "name": "TBL_XWWL_ITEM",
+      "columns": {
+        "FLD_PID": {
+          "autoincrement": true,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_TayLuyen_Type": {
+          "autoincrement": false,
+          "name": "FLD_TayLuyen_Type",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITEMGROUP": {
+          "autoincrement": false,
+          "name": "FLD_ITEMGROUP",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_RESIDE1": {
+          "autoincrement": false,
+          "name": "FLD_RESIDE1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_RESIDE2": {
+          "autoincrement": false,
+          "name": "FLD_RESIDE2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SEX": {
+          "autoincrement": false,
+          "name": "FLD_SEX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_UP_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_UP_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_RECYCLE_MONEY": {
+          "autoincrement": false,
+          "name": "FLD_RECYCLE_MONEY",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SALE_MONEY": {
+          "autoincrement": false,
+          "name": "FLD_SALE_MONEY",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_QUESTITEM": {
+          "autoincrement": false,
+          "name": "FLD_QUESTITEM",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NJ": {
+          "autoincrement": false,
+          "name": "FLD_NJ",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_DF": {
+          "autoincrement": false,
+          "name": "FLD_DF",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_AT1": {
+          "autoincrement": false,
+          "name": "FLD_AT1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_AT2": {
+          "autoincrement": false,
+          "name": "FLD_AT2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_AP": {
+          "autoincrement": false,
+          "name": "FLD_AP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_JOB_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_JOB_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_ZX": {
+          "autoincrement": false,
+          "name": "FLD_ZX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_EL": {
+          "autoincrement": false,
+          "name": "FLD_EL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_WX": {
+          "autoincrement": false,
+          "name": "FLD_WX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_WXJD": {
+          "autoincrement": false,
+          "name": "FLD_WXJD",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MONEY": {
+          "autoincrement": false,
+          "name": "FLD_MONEY",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_WEIGHT": {
+          "autoincrement": false,
+          "name": "FLD_WEIGHT",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NEED_MONEY": {
+          "autoincrement": false,
+          "name": "FLD_NEED_MONEY",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NEED_FIGHTEXP": {
+          "autoincrement": false,
+          "name": "FLD_NEED_FIGHTEXP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC5": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC5",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SIDE": {
+          "autoincrement": false,
+          "name": "FLD_SIDE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SELL_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_SELL_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_LOCK": {
+          "autoincrement": false,
+          "name": "FLD_LOCK",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SERIES": {
+          "autoincrement": false,
+          "name": "FLD_SERIES",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_INTEGRATION": {
+          "autoincrement": false,
+          "name": "FLD_INTEGRATION",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_DES": {
+          "autoincrement": false,
+          "name": "FLD_DES",
+          "type": "varchar(2000)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_HEAD_WEAR": {
+          "autoincrement": false,
+          "name": "FLD_HEAD_WEAR",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_SHIELD": {
+          "autoincrement": false,
+          "name": "FLD_SHIELD",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_CJL": {
+          "autoincrement": false,
+          "name": "FLD_CJL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_CHAN": {
+          "autoincrement": false,
+          "name": "FLD_CHAN",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_BS": {
+          "autoincrement": false,
+          "name": "FLD_BS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PetNameType": {
+          "autoincrement": false,
+          "name": "FLD_PetNameType",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_KONGFU": {
+      "name": "TBL_XWWL_KONGFU",
+      "columns": {
+        "FLD_PID": {
+          "autoincrement": true,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SOURCE_AT": {
+          "autoincrement": false,
+          "name": "FLD_SOURCE_AT",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_AT": {
+          "autoincrement": false,
+          "name": "FLD_AT",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MP": {
+          "autoincrement": false,
+          "name": "FLD_MP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NEEDEXP": {
+          "autoincrement": false,
+          "name": "FLD_NEEDEXP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JOB": {
+          "autoincrement": false,
+          "name": "FLD_JOB",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ZX": {
+          "autoincrement": false,
+          "name": "FLD_ZX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_JOBLEVEL": {
+          "autoincrement": false,
+          "name": "FLD_JOBLEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TYPE": {
+          "autoincrement": false,
+          "name": "FLD_TYPE",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_EFFERT": {
+          "autoincrement": false,
+          "name": "FLD_EFFERT",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_INDEX": {
+          "autoincrement": false,
+          "name": "FLD_INDEX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CongKichSoLuong": {
+          "autoincrement": false,
+          "name": "FLD_CongKichSoLuong",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_VoCongLoaiHinh": {
+          "autoincrement": false,
+          "name": "FLD_VoCongLoaiHinh",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MoiCapNguyHai": {
+          "autoincrement": false,
+          "name": "FLD_MoiCapNguyHai",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MoiCapThemNguyHai": {
+          "autoincrement": false,
+          "name": "FLD_MoiCapThemNguyHai",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MoiCapThemMP": {
+          "autoincrement": false,
+          "name": "FLD_MoiCapThemMP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MoiCapThemLichLuyen": {
+          "autoincrement": false,
+          "name": "FLD_MoiCapThemLichLuyen",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MoiCapThemTuLuyenDangCap": {
+          "autoincrement": false,
+          "name": "FLD_MoiCapThemTuLuyenDangCap",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MoiCapVoCongDiemSo": {
+          "autoincrement": false,
+          "name": "FLD_MoiCapVoCongDiemSo",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_VoCongToiCaoDangCap": {
+          "autoincrement": false,
+          "name": "FLD_VoCongToiCaoDangCap",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_TIME": {
+          "autoincrement": false,
+          "name": "FLD_TIME",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DEATHTIME": {
+          "autoincrement": false,
+          "name": "FLD_DEATHTIME",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CDTIME": {
+          "autoincrement": false,
+          "name": "FLD_CDTIME",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Time_Animation": {
+          "autoincrement": false,
+          "name": "Time_Animation",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_MAP": {
+      "name": "TBL_XWWL_MAP",
+      "columns": {
+        "FLD_MID": {
+          "autoincrement": true,
+          "name": "FLD_MID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FILE": {
+          "autoincrement": false,
+          "name": "FLD_FILE",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "X": {
+          "autoincrement": false,
+          "name": "X",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Y": {
+          "autoincrement": false,
+          "name": "Y",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_MONSTER": {
+      "name": "TBL_XWWL_MONSTER",
+      "columns": {
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_HP": {
+          "autoincrement": false,
+          "name": "FLD_HP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_AT": {
+          "autoincrement": false,
+          "name": "FLD_AT",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_DF": {
+          "autoincrement": false,
+          "name": "FLD_DF",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_EXP": {
+          "autoincrement": false,
+          "name": "FLD_EXP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_BOSS": {
+          "autoincrement": false,
+          "name": "FLD_BOSS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_AUTO": {
+          "autoincrement": false,
+          "name": "FLD_AUTO",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NPC": {
+          "autoincrement": false,
+          "name": "FLD_NPC",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_QUEST": {
+          "autoincrement": false,
+          "name": "FLD_QUEST",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_QUESTID": {
+          "autoincrement": false,
+          "name": "FLD_QUESTID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_STAGES": {
+          "autoincrement": false,
+          "name": "FLD_STAGES",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_QUESTITEM": {
+          "autoincrement": false,
+          "name": "FLD_QUESTITEM",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PP": {
+          "autoincrement": false,
+          "name": "FLD_PP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_GOLD": {
+          "autoincrement": false,
+          "name": "FLD_GOLD",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Accuracy": {
+          "autoincrement": false,
+          "name": "FLD_Accuracy",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Evasion": {
+          "autoincrement": false,
+          "name": "FLD_Evasion",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_FreeDrop": {
+          "autoincrement": false,
+          "name": "FLD_FreeDrop",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {
+        "FLD_PID": {
+          "name": "FLD_PID",
+          "columns": [
+            "FLD_PID"
+          ]
+        }
+      }
+    },
+    "TBL_XWWL_NPC": {
+      "name": "TBL_XWWL_NPC",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_X": {
+          "autoincrement": false,
+          "name": "FLD_X",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Z": {
+          "autoincrement": false,
+          "name": "FLD_Z",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_Y": {
+          "autoincrement": false,
+          "name": "FLD_Y",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FACE0": {
+          "autoincrement": false,
+          "name": "FLD_FACE0",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FACE": {
+          "autoincrement": false,
+          "name": "FLD_FACE",
+          "type": "float",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MID": {
+          "autoincrement": false,
+          "name": "FLD_MID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_HP": {
+          "autoincrement": false,
+          "name": "FLD_HP",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_AT": {
+          "autoincrement": false,
+          "name": "FLD_AT",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DF": {
+          "autoincrement": false,
+          "name": "FLD_DF",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NPC": {
+          "autoincrement": false,
+          "name": "FLD_NPC",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NEWTIME": {
+          "autoincrement": false,
+          "name": "FLD_NEWTIME",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_LEVEL": {
+          "autoincrement": false,
+          "name": "FLD_LEVEL",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_EXP": {
+          "autoincrement": false,
+          "name": "FLD_EXP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_AUTO": {
+          "autoincrement": false,
+          "name": "FLD_AUTO",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_BOSS": {
+          "autoincrement": false,
+          "name": "FLD_BOSS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_GOLD": {
+          "autoincrement": false,
+          "name": "FLD_GOLD",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Accuracy": {
+          "autoincrement": false,
+          "name": "FLD_Accuracy",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_Evasion": {
+          "autoincrement": false,
+          "name": "FLD_Evasion",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_QItemDrop": {
+          "autoincrement": false,
+          "name": "FLD_QItemDrop",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_QDropPP": {
+          "autoincrement": false,
+          "name": "FLD_QDropPP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_FreeDrop": {
+          "autoincrement": false,
+          "name": "FLD_FreeDrop",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_OPEN": {
+      "name": "TBL_XWWL_OPEN",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_PIDX": {
+          "autoincrement": false,
+          "name": "FLD_PIDX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_NUMBER": {
+          "autoincrement": false,
+          "name": "FLD_NUMBER",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAMEX": {
+          "autoincrement": false,
+          "name": "FLD_NAMEX",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PP": {
+          "autoincrement": false,
+          "name": "FLD_PP",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC5": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC5",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FJ_ThucTinh": {
+          "autoincrement": false,
+          "name": "FLD_FJ_ThucTinh",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FJ_TienHoa": {
+          "autoincrement": false,
+          "name": "FLD_FJ_TienHoa",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_FJ_TrungCapPhuHon": {
+          "autoincrement": false,
+          "name": "FLD_FJ_TrungCapPhuHon",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_BD": {
+          "autoincrement": false,
+          "name": "FLD_BD",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_DAYS": {
+          "autoincrement": false,
+          "name": "FLD_DAYS",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "CoMoThongBao": {
+          "autoincrement": false,
+          "name": "CoMoThongBao",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_RandomOption": {
+          "autoincrement": false,
+          "name": "FLD_RandomOption",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_PublicWarehouse": {
+      "name": "TBL_XWWL_PublicWarehouse",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_ID": {
+          "autoincrement": false,
+          "name": "FLD_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MONEY": {
+          "autoincrement": false,
+          "name": "FLD_MONEY",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITEM": {
+          "autoincrement": false,
+          "name": "FLD_ITEM",
+          "type": "varbinary(4380)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITIME": {
+          "autoincrement": false,
+          "name": "FLD_ITIME",
+          "type": "varbinary(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ZBVER": {
+          "autoincrement": false,
+          "name": "FLD_ZBVER",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_SELL": {
+      "name": "TBL_XWWL_SELL",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_NPCNAME": {
+          "autoincrement": false,
+          "name": "FLD_NPCNAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NID": {
+          "autoincrement": false,
+          "name": "FLD_NID",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_INDEX": {
+          "autoincrement": false,
+          "name": "FLD_INDEX",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_PID": {
+          "autoincrement": false,
+          "name": "FLD_PID",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITEMNAME": {
+          "autoincrement": false,
+          "name": "FLD_ITEMNAME",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MONEY": {
+          "autoincrement": false,
+          "name": "FLD_MONEY",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_SELL": {
+          "autoincrement": false,
+          "name": "FLD_SELL",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "FLD_MAGIC0": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC0",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC1": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC1",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC2": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC2",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC3": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC3",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MAGIC4": {
+          "autoincrement": false,
+          "name": "FLD_MAGIC4",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_CanVoHuan": {
+          "autoincrement": false,
+          "name": "FLD_CanVoHuan",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "TBL_XWWL_Warehouse": {
+      "name": "TBL_XWWL_Warehouse",
+      "columns": {
+        "ID": {
+          "autoincrement": false,
+          "name": "ID",
+          "type": "int",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "FLD_ID": {
+          "autoincrement": false,
+          "name": "FLD_ID",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_NAME": {
+          "autoincrement": false,
+          "name": "FLD_NAME",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_MONEY": {
+          "autoincrement": false,
+          "name": "FLD_MONEY",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "FLD_ITEM": {
+          "autoincrement": false,
+          "name": "FLD_ITEM",
+          "type": "varbinary(4380)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "schemas": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}

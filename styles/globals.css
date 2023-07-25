@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@keyframes spin-slow {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow 15s linear infinite;
+  }
+
+  @layer base {
+    body {
+        @apply bg-gradient-to-br text-slate-900 dark:text-slate-100 from-indigo-50 via-white to-cyan-100 dark:from-indigo-950 dark:via-black dark:to-red-950 pb-32 md:pb-0
+   
+    }
+  }
+
+.diagonal {
+  background-color: #ebf8de;
+opacity: 0.8;
+background-size: 8px 8px;
+background-image: repeating-linear-gradient(45deg, #a1e9e5 0, #a1e9e5 0.8px, #ebf8de 0, #ebf8de 50%);
+}
+
+@layer components {
+  body {
+    @apply pb-0
+  }
+
+}
