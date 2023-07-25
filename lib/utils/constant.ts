@@ -1,4 +1,4 @@
-import { cam_button, cung_button, daiphu_button, dao_button, dhl_button, dieuyen_button, hbq_button, kiem_button, ninja_button, quyen_button, thany_button, thuong_button, tuhao_button } from "../characterImages"
+import { cam, cam_button, cam_description, cung, cung_button, cung_description, daiphu, daiphu_button, daiphu_description, dao, dao_button, dao_description, dhl, dhl_button, dhl_description, dieuyen, dieuyen_button, dieuyen_description, hbq, hbq_button, hbq_description, kiem, kiem_button, kiem_description, ninja, ninja_button, ninja_description, quyen, quyen_button, quyen_description, thany, thany_button, thany_description, thuong, thuong_button, thuong_description, tuhao, tuhao_button, tuhao_description } from "@/lib/characterImages";
 
 export const thangThienList = [
     {id:0 , text: 'All', slug: 'all' , color: 'text-gray-800'},
@@ -44,6 +44,21 @@ export const thangThienList = [
       {id:13, text: "Thần Y", slug:'thany' , color: 'text-fuchsia-800',icon: thany_button.src}
   ]
   
+export const characterLists = [
+  {id: 1,title: "Đao khách",image:dao_button.src,description: dao_description.src,char:dao.src},
+  {id: 2,title: "Kiếm khách",image:kiem_button.src,description: kiem_description.src,char:kiem.src},
+  {id: 3,title: "Thương khách",image:thuong_button.src,description: thuong_description.src,char:thuong.src},
+  {id: 4,title: "Cung Thủ",image:cung_button.src,description: cung_description.src,char:cung.src},
+  {id: 5,title: "Đại phu",image:daiphu_button.src,description: daiphu_description.src,char:daiphu.src},
+  {id: 6,title: "Thích khách",image:ninja_button.src,description: ninja_description.src,char:ninja.src},
+  {id: 7,title: "Cầm sư",image:cam_button.src,description: cam_description.src,char:cam.src},
+  {id: 8,title: "Hàn Bảo Quân",image:hbq_button.src,description: hbq_description.src,char:hbq.src},
+  {id: 9,title: "Đàm Hoa Liên",image:dhl_button.src,description: dhl_description.src,char:dhl.src},
+  {id: 10,title: "Quyền sư",image:quyen_button.src,description: quyen_description.src,char:quyen.src},
+  {id: 11,title: "Diệu Yến",image:dieuyen_button.src,description: dieuyen_description.src,char:dieuyen.src},
+  {id: 12,title: "Tử hào",image:tuhao_button.src,description: tuhao_description.src,char:tuhao.src},
+  {id:13,title: "Thần Y",image:thany_button.src, description: thany_description.src,char:thany.src},
+]
   const faction = [
       {id:0, name: "Trung lập", color: "text-black"},
       {id:1, name: "Chính", color: "text-blue-600"},

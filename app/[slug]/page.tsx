@@ -19,6 +19,7 @@ import VoHuanShop from "@/components/pages/shop/vohuanshop"
 import VoHoangShop from "@/components/pages/shop/vohoangshop"
 import EventShop from "@/components/pages/shop/eventshop"
 import TinTuc from "@/components/pages/news"
+import KhiCong from "@/components/pages/khicong"
 
 const SlugPage = async ({params,searchParams}:any) => {
     const page = params.slug
@@ -38,7 +39,8 @@ const SlugPage = async ({params,searchParams}:any) => {
         "vohuan-shop": VoHuanShop,
         "vohoang-shop": VoHoangShop,
         "event-shop": EventShop,
-        "tin-tuc" : TinTuc
+        "tin-tuc" : TinTuc,
+        "khi-cong": KhiCong
     }
     const Components = pageMap[page] || NotFound
   return (
