@@ -23,7 +23,7 @@ Yulgang Website is a modern web application built with Next.js, Next-auth, Drizz
 - **Item Showcase**: Provides an in-depth catalog of in-game items, their properties, and uses, enabling players to strategize their gameplay effectively.
 
 - **Buff Information**: Gives players insights into different buffs available in the game, their effects, and how to obtain them for enhancing character performance.
-
+![Yulgang Character Showcase](banner2.png)
 ## Tech Stack
 
 - **Next.js**: A powerful React framework for building server-rendered and static websites, providing a seamless development experience.
