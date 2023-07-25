@@ -37,7 +37,6 @@ const RankTaiPhu = async ({params,searchParams}) => {
                    <th className="hidden md:table-cell">Nghề</th>
                     <th className=" text-right">Túi</th>
                     <th className="hidden md:table-cell text-right">Kho Riêng</th>
-                    <th className="hidden md:table-cell text-right">Kho Chung</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -50,7 +49,6 @@ const RankTaiPhu = async ({params,searchParams}) => {
                             <td className={`py-1  md:table-cell hidden  ${charList[item.FLD_JOB].color} text-center relative`}><span>{charList[item.FLD_JOB].text}</span></td>
                             <td className=" py-1 text-black dark:text-white text-right px-2 md:px-4">{(+item.money).toLocaleString()}</td>
                             <td className="  py-1 text-black dark:text-white hidden md:table-cell text-right px-2 md:px-4">{(+item.whmoney).toLocaleString()}</td>
-                            <td className="  py-1 text-black dark:text-white hidden md:table-cell text-right px-2 md:px-4">{(+item.pbmoney).toLocaleString()}</td>
                         </tr>
                       )
                     })}

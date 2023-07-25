@@ -26,9 +26,7 @@ export async function findManyMoney(take:number,skip:number){
       money: Character.FLD_MONEY,
       FLD_JOB:Character.FLD_JOB,
       whmoney: TBL_XWWL_Warehouse.FLD_MONEY,
-      pbmoney: TBL_XWWL_PublicWarehouse.FLD_MONEY
-    }).from(Character).innerJoin(TBL_XWWL_Warehouse, eq(TBL_XWWL_Warehouse.FLD_NAME,Character.FLD_NAME))
-    .innerJoin(TBL_XWWL_PublicWarehouse,eq(TBL_XWWL_PublicWarehouse.FLD_ID,Character.FLD_ID)).limit(take).offset(take*skip).orderBy(desc(sql`CONVERT(${Character.FLD_MONEY},SIGNED INTEGER) + CONVERT(${TBL_XWWL_Warehouse.FLD_MONEY},SIGNED INTEGER) +CONVERT(${TBL_XWWL_PublicWarehouse.FLD_MONEY},SIGNED INTEGER) `))
+    }).from(Character).innerJoin(TBL_XWWL_Warehouse, eq(TBL_XWWL_Warehouse.FLD_NAME,Character.FLD_NAME)).limit(take).offset(take*skip).orderBy(desc(sql`CONVERT(${Character.FLD_MONEY},SIGNED INTEGER) + CONVERT(${TBL_XWWL_Warehouse.FLD_MONEY},SIGNED INTEGER) `))
     return res
 }
 
