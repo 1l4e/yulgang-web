@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title,
     description,
   },
-  metadataBase: new URL("https://chamthoi.com"),
+  metadataBase: new URL(process.env.PUBLIC_HOME),
   themeColor: "#FFF",
 };
 
