@@ -45,7 +45,7 @@ export const thangThienList = [
   ]
   
   const faction = [
-      {id:0, name: "Trung lập", color: "text-white"},
+      {id:0, name: "Trung lập", color: "text-black"},
       {id:1, name: "Chính", color: "text-blue-600"},
       {id:2, name: "Tà", color: "text-red-500"}
     ]
