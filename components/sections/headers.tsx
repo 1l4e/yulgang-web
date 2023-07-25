@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import {   CalendarCheck, CalendarDays,  Castle,  ChevronDown, CircleDollarSign, Coins,  DownloadCloud, Fan, Gem, ListOrdered, Newspaper, PocketKnife, Sparkle, Swords, VenetianMask } from "lucide-react";
+import {   CalendarCheck, CalendarDays,  Castle,  ChevronDown, CircleDollarSign, Coins,  DownloadCloud, Fan, Gem, ListOrdered, Newspaper, PocketKnife, Sparkle, Swords, VenetianMask, Zap } from "lucide-react";
 import logo from '@/public/logo.png'
 import Image from "next/image";
 import { LoginButton,LogoutButton } from "../auth/button";
@@ -30,7 +30,8 @@ const menus = [
     {id: 114,title: "Chợ online", slug: 'market', icon: CalendarDays},
     {id: 115,title: "Võ huân Shop", slug: 'vohuan-shop', icon: Sparkle},
     {id: 116,title: "Võ hoàng Shop", slug: 'vohoang-shop', icon: Gem}
-  ]}
+  ]},
+  {id:5,title: "Khí Công", slug: "khi-cong", icon: Zap}
 ];
 
 const Header = () => {
