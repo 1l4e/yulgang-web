@@ -58,7 +58,7 @@ export default async function RootLayout({
       backgroundPosition: "50% 50%",
       backgroundSize: "cover"
     }}>
-           <section className="bg-transparent flex items-center justify-center relative mt-12 md:mt-24">
+           <section className="bg-transparent flex items-center justify-center relative mt-24 md:mt-24">
            {children}
            </section>
         </main>

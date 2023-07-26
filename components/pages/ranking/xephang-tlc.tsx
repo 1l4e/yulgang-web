@@ -3,7 +3,7 @@ import { fact, num } from '@/lib/utils/reader';
 import { findManyRankTLC } from '@/models/rank.server';
 import Link from 'next/link';
 import React from 'react'
-
+import NotFound from "@/app/not-found";
 
 function countItemsByMonphai(object:any,id:string) {
   const counts = {};
@@ -30,10 +30,7 @@ const RankTLC = async ({params,searchParams}) => {
   const tl = countItemsByMonphai(data,'TheLuc')
   const cpath = `/${params.slug}`
   if (data.length === 0){
-    return <>
-    <h2>Không tìm thấy bảng xếp hạng</h2>
-    <Link className="bg-green-500 px-4 py-2 rounded inline-block" href={`/${params.slug}`}> Quay lại</Link>
-    </>
+    return <NotFound />
   }
   const prev = new URLSearchParams();
   const next = new URLSearchParams();

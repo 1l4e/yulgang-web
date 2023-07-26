@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/table";
 import { charList } from "@/lib/utils/constant";
 import Image from 'next/image';
+import NotFound from "@/app/not-found";
+
 const RankVip = async ({params,searchParams}) => {
   let {page} = searchParams;
   if (!page || +page <0) page =0;
@@ -19,10 +21,7 @@ const RankVip = async ({params,searchParams}) => {
   const data = await findManyVip(50,page)
   const cpath = `/${params.slug}`
   if (!data ||data.length === 0){
-    return <>
-    <h2>Không tìm thấy bảng xếp hạng</h2>
-    <Link className="bg-green-500 px-4 py-2 rounded inline-block" href="/"> Quay lại</Link>
-    </>
+    return <NotFound />
   }
   const prev = new URLSearchParams();
   const next = new URLSearchParams();

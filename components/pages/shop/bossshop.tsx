@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/table";
 import {  num } from "@/lib/utils/reader";
 import Image from "next/image";
-
+import NotFound from "@/app/not-found";
 
 const ItemType = [
     {id:0, text: "Tất cả", type: 0},
@@ -30,10 +30,7 @@ const BossShop = async ({params,searchParams}) => {
     const data = await findManyBossShop(50,page)
     const cpath = `/${params.slug}`
     if (data.length === 0){
-      return <div className="flex flex-col">
-      <h2>Không tìm thấy dữ liệu</h2>
-      <Link className="bg-green-500 text-white px-4 py-2 rounded inline-block text-center" href={cpath}> Quay lại</Link>
-      </div>
+      return <NotFound/>
     }
     const prev = new URLSearchParams();
     const next = new URLSearchParams();

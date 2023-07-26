@@ -11,8 +11,10 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { signIn, signOut } from "next-auth/react";
 import Link from "next/link";
+import { characterLists } from "@/lib/utils/constant";
 
 export const LoginButton = () => {
+
   return (
     <button
       className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
@@ -35,12 +37,14 @@ export const RegisterButton = () => {
 };
 
 export const LogoutButton = () => {
+  const random = Math.floor(Math.random() * characterLists.length)
+  let image = characterLists[0]
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
         {" "}
         <Avatar className="cursor-pointer">
-          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarImage src={image.image} />
           <AvatarFallback>Tài khoản</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>

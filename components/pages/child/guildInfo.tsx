@@ -10,6 +10,7 @@ import {
   } from "@/components/ui/table";
   import Link from 'next/link'
 import {ChucVuBang} from '@/lib/utils/constant'
+import NotFound from "@/app/not-found";
 
 const GuildInfo = async ({params,searchParams}) => {
     const {slug,child} = params
@@ -19,15 +20,7 @@ const GuildInfo = async ({params,searchParams}) => {
     const guildName = Buffer.from(child,"hex").toString()
     const data = await findManyGuildMember(guildName,50,page);
     if (!data || data.length === 0) {
-        return (
-          <>
-            <h2>Không tìm thấy Thông tin Guild</h2>
-            <Link className="bg-green-500 px-4 py-2 rounded inline-block" href="/">
-              {" "}
-              Quay lại
-            </Link>
-          </>
-        );
+      return  <NotFound />
       }
   return (
     <div className="container mx-auto">

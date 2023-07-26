@@ -9,6 +9,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import NotFound from "@/app/not-found";
 
 const RankGuild = async ({ params, searchParams }) => {
   let { page } = searchParams;
@@ -18,13 +19,7 @@ const RankGuild = async ({ params, searchParams }) => {
   const cpath = `/${params.slug}`;
   if (!data || data.length === 0) {
     return (
-      <>
-        <h2>Không tìm thấy Guild nào</h2>
-        <Link className="bg-green-500 px-4 py-2 rounded inline-block" href="/">
-          {" "}
-          Quay lại
-        </Link>
-      </>
+      <NotFound/>
     );
   }
   return (

@@ -87,11 +87,11 @@ const KhiCongComponents = ({data,tt}) => {
                  */}<div className="mx-4 border my-4 px-2 py-4" key={item.id}>
                             <h1 className="text-center text-2xl">{item.title}</h1>
                           
-                            <div  className="flex flex-wrap gap-2 justify-center">
+                            <div  className="inline-flex items-center justify-center rounded-md p-1 text-muted-foreground flex-wrap">
                             {data.map((i:any,index:number)=>{
                                 if (+i.FLD_JOB === +item.id){
                                     return (
-                                        <div key={index}>
+                                        <div key={index} className='m-2'>
                                             <Image width={32} height={32} className="max-w-none" alt={item.title} onClick={(e)=>handleClick(e,i)} onMouseLeave={onMouseLeave} onMouseEnter={(e)=>handleClick(e,i)} src={`${imagePath}/SKILL/${i.FLD_PID}.jpg`}></Image>
                                         </div>
                                     )
@@ -99,11 +99,11 @@ const KhiCongComponents = ({data,tt}) => {
                                 
                             })}
                             </div>
-                            <div className="flex flex-wrap gap-2 justify-center">
+                            <div className="inline-flex items-center justify-center rounded-md p-1 text-muted-foreground flex-wrap">
                             {tt.map((i:any,index:number)=>{
                                 if (+i.FLD_JOB === +item.id || +i.FLD_JOB===0){
                                     return (
-                                        <div key={index}>
+                                        <div key={index} className='m-2'>
                                             <Image width={32} height={32} className="max-w-none" alt={item.title} onClick={(e)=>handleClick(e,i)} onMouseLeave={onMouseLeave} onMouseEnter={(e)=>handleClick(e,i)} src={`${imagePath}/SKILL/${i.FLD_PID}.jpg`}></Image>
                                         </div>
                                     )

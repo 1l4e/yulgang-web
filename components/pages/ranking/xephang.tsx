@@ -3,7 +3,7 @@ import { fact, num } from "@/lib/utils/reader";
 import { findManyCharacter } from "@/models/character.server"
 import Image from "next/image";
 import Link from "next/link";
-
+import NotFound from "@/app/not-found";
 
 
 const XepHangPage = async ({params,searchParams}) => {
@@ -17,10 +17,7 @@ const XepHangPage = async ({params,searchParams}) => {
   const data = await findManyCharacter(50,page,charId)
   const cpath = `/xep-hang`
   if (data.length === 0){
-    return <>
-    <h2>Không tìm thấy bảng xếp hạng</h2>
-    <Link className="bg-green-500 px-4 py-2 rounded inline-block" href="/xep-hang"> Quay lại</Link>
-    </>
+    return <NotFound />
   }
   const prev = new URLSearchParams();
   const next = new URLSearchParams();

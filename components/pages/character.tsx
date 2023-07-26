@@ -5,6 +5,7 @@ import Link from "next/link";
 import { buffRead } from "@/lib/utils/reader";
 import Buff from "../charInfo/Buff";
 import Inventory from "../charInfo/Inventory";
+import NotFound from '@/app/not-found'
 
 
 
@@ -14,9 +15,7 @@ const Character = async ({ params, searchParams }) => {
   const imagePath = `https://chamthoi.com/images/hkpro/ITEM_V20/`
   const characterData = await findOneCharacter(character);
   if (characterData === null || !characterData){
-    return  (<div className="relative mt-10">
-      <h1 className="text-center text-3xl">Không tìm thấy nhân vật này</h1>
-    </div>)
+    return  <NotFound />
   }
   let buff = characterData.FLD_CTIME_STR;
   let bbuff = characterData.FLD_CHTIME;
